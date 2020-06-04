@@ -80,13 +80,11 @@ namespace YildizGroundStation
             cBox_ports.Items.AddRange(ports);
         }
 
-
         private void btn_close_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
-        
         private void btn_minimize_Click(object sender, EventArgs e)
         {
             if (iscollapse == false)
@@ -125,7 +123,7 @@ namespace YildizGroundStation
                 Thread Exit = new Thread(new ThreadStart(CloseSerialExit)); //close port in new thread to avoid hang
                 Exit.Start(); //close port in new thread to avoid hang
             }
-        }0
+        }
 
         private void CloseSerial()
         {

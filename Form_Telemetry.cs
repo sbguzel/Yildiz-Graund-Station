@@ -125,7 +125,7 @@ namespace YildizGroundStation
                 Thread Exit = new Thread(new ThreadStart(CloseSerialExit)); //close port in new thread to avoid hang
                 Exit.Start(); //close port in new thread to avoid hang
             }
-        }0
+        }
 
         private void CloseSerial()
         {

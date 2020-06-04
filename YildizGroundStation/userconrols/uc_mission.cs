@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Device.Location;
 using System.Globalization;
@@ -99,7 +92,6 @@ namespace YildizGroundStation.userconrols
                 LatLng = LatLngClick.GetAttribute("value").Remove(0, 7).Split(',');
             LatLng[1] = LatLng[1].Remove(LatLng[1].Length - 1, 1).Trim();
         }
-        
     }
 }
 

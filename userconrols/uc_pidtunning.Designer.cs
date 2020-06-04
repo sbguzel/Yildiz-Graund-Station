@@ -164,6 +164,7 @@
             this.hScrollBar1.Name = "hScrollBar1";
             this.hScrollBar1.Size = new System.Drawing.Size(512, 20);
             this.hScrollBar1.TabIndex = 37;
+            this.hScrollBar1.Visible = false;
             this.hScrollBar1.ValueChanged += new System.EventHandler(this.hScrollBar1_ValueChanged);
             // 
             // btn_sendnewpid
@@ -369,7 +370,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.groupBox_SetPID);
             this.Controls.Add(this.winChartViewer1);
             this.Controls.Add(this.trackLine2Enable);

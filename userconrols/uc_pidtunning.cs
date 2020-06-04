@@ -286,9 +286,9 @@ namespace YildizGroundStation.userconrols
             XYChart c = new XYChart(512,288);
 
             // Set the position, size and colors of the plot area
-            c.setPlotArea(23, 33, c.getWidth() - 41, c.getHeight() - 53, c.linearGradientColor(0, 33, 0,
-                c.getHeight() - 53, 0xf0f6ff, 0xa0c0ff), -1, Chart.Transparent, 0xffffff, 0xffffff);
-
+            c.setPlotArea(23, 33, c.getWidth() - 41, c.getHeight() - 53, c.linearGradientColor(0, 0, 0,
+                c.getHeight() - 53, 0, 0), -1, Chart.Transparent, 0, 0);
+            c.setBackground(0, 0);
             // As the data can lie outside the plotarea in a zoomed chart, we need enable clipping.
             c.setClipping();
 
@@ -305,7 +305,7 @@ namespace YildizGroundStation.userconrols
             c.xAxis().setColors(Chart.Transparent);
             c.yAxis().setColors(Chart.Transparent);
             c.xAxis().setLabelStyle("Arial", 10);
-            c.yAxis().setLabelStyle("Arial Bold", 10, 0x336699);
+            c.yAxis().setLabelStyle("Arial Bold", 10, 0xFFFFFF);
 
             // Set the y-axis tick length to 0 to disable the tick and put the labels closer to the axis.
             c.yAxis().setLabelGap(-1);
@@ -336,8 +336,8 @@ namespace YildizGroundStation.userconrols
             // Now we add the 3 data series to a line layer, using the color red (ff0000), green (00cc00)
             // and blue (0000ff)
             layer.setXData(viewPortTimeStamps);
-            layer.addDataSet(viewPortDataSeriesA, 0x00cc00, "Alpha");
-            layer.addDataSet(viewPortDataSeriesB, 0x0000ff, "Beta");
+            layer.addDataSet(viewPortDataSeriesA, 0x143C46, "Alpha");
+            layer.addDataSet(viewPortDataSeriesB, 0x143C46, "Beta");
 
             //================================================================================
             // Configure axis scale and labelling
